@@ -24,6 +24,9 @@ class Tent:
 		
 	#etc.
 	
+	def getOccupantByID(self, id):
+        	return next((individual for individual in self.occupants if individual.id == id), None)
+	
 	def addOccupant(self, individual):
 		self.occupants.append(individual)
 	
