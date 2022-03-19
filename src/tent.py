@@ -23,6 +23,8 @@ class Tent:
 	
 	def addOccupant(self, individual):
 		#self.occupants ...
+		pass
 	
 	def removeOccupant(self, individualID):
 		#if individualID in IDs of set of people
+		pass
