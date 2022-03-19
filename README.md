@@ -7,7 +7,7 @@ Optimal_team project:
 
 - [Luigi D'Amico](https://github.com/luigidamico100)
 - [Marco Lombardi](https://github.com/LombMarc)
-- [Simone Perrotta]()
+- [Simone Perrotta](https://github.com/SimonePerrotta)
 - [Lorenzo Pieri](https://github.com/404answernotfound)
 
 The goal of the project is to compute an index value that suggest to the camp's management how to distribute the refugees across the tent. <br>
