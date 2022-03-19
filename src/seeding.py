@@ -9,7 +9,8 @@ class _Faker(Faker):
         return choice(['Christian', 'Muslim', 'Orthodox'])
     def nationality(self):
         # TODO Add more nationalities
-        return choice(['Ucranian', 'Belarus', 'Russian', 'Romanian', 'Italian', 'Chinese'])
+        return choice(['Ucranian', 'Belarus', 'Russian', 'Romanian', 'Moldovan', 'Polish', 'Italian', 'Chinese'])
+        # Languages.  Romanian: {'Romanian', 'Moldovan'}. 
 
 # Faker instance
 faker = _Faker()
