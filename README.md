@@ -2,7 +2,7 @@
 Project developed during code4refugees, on March 19-20, 2022.
 
 
-Optimal_team project: Luigi D'Amico, Marco Lombardi, Simone Perrotta, Riccardo.., Lorenzo Pieri
+Optimal_team project: Luigi D'Amico, Marco Lombardi, Simone Perrotta, Lorenzo Pieri
 
 The goal of the project is to compute an index value that suggest to the camp's management how to distribute the refugees across the tent. <br>
 ## Application
