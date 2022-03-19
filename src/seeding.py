@@ -23,6 +23,7 @@ tents = []
 # People
 for i in range(1, 1000):
     people.append(Occupant(
+        id = faker.unique.random_int(),
         name = faker.name(),
         surname = faker.last_name(),
         birth = faker.past_date(),
@@ -32,6 +33,10 @@ for i in range(1, 1000):
         relatives = [],
         triage = faker.pyint(0, 4)
     ))
+
+# Generate relationships
+for i, person in enumerate(people):
+    person.relatives = [choice(people) for _ in range(4)]
 
 for i, person in enumerate(people):
     print(i, person)
@@ -47,4 +52,5 @@ for i in range(1, 100):
     ))
 
 for i, tent in enumerate(tents):
-    print(i, tent)
+    #print(i, tent)
+    pass
