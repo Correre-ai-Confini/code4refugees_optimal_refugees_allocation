@@ -22,7 +22,7 @@ class Tent:
 	#etc.
 	
 	def addOccupant(self, individual):
-		#self.occupants ...
+		self.occupants.append(individual)
 	
 	def removeOccupant(self, individualID):
 		#if individualID in IDs of set of people
