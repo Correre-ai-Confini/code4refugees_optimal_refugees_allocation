@@ -5,6 +5,9 @@ class Tent:
 		self.occupants = kwargs['occupants'] #array(Occupant)
 		self.distanceFromMed = kwargs['distanceFromMed'] #float [0,1]
 		
+	def __str__(self):
+		return ("Tent ID: " + str(self.id) + "\n" + "Tent Max Space: " + str(self.maxSpace) + "\n" + "Tent Occupants: " + str(self.occupants)  + "\n" + "Tent Distance From Medical Center: " + str(self.distanceFromMed))
+
 	def getAvailableSpace(self):
 		return ( self.maxSpace - len(self.occupants) )
 		
@@ -22,8 +25,7 @@ class Tent:
 	#etc.
 	
 	def addOccupant(self, individual):
-		#self.occupants ...
-		pass
+		self.occupants.append(individual)
 	
 	def removeOccupant(self, individualID):
 		#if individualID in IDs of set of people

@@ -39,16 +39,12 @@ for i, person in enumerate(people):
 
 # Tents
 for i in range(1, 100):
-    people.append(Occupant(
-        name = faker.name(),
-        surname = faker.last_name(),
-        birth = faker.past_date(),
-        gender = faker.pybool(),
-        nationality = faker.nationality(),
-        religion = faker.religion(),
-        relatives = [],
-        triage = faker.pyint(0, 4)
+    tents.append(Tent(
+        id = faker.unique.random_int(),
+        maxSpace = faker.pyint(100, 200),
+        occupants = faker.pyint(0, 20),
+        distanceFromMed = faker.pyfloat(min_value=10, max_value=200)
     ))
 
-for i, person in enumerate(people):
-    print(i, person)
+for i, tent in enumerate(tents):
+    print(i, tent)
