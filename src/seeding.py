@@ -1,17 +1,20 @@
 from occupant import Occupant
+from faker import Faker
+
+faker = Faker()
 
 people = []
 
 for i in range(1, 1000):
     people.append(Occupant(
-        name = 'Nome',
-        surname = 'Cognome',
-        birth = '01/01/1980',
-        gender = False,
-        nationality = 'Ucranian',
-        religion = 'Christian',
+        name = faker.name(),
+        surname = faker.last_name(),
+        birth = faker.past_date(),
+        gender = faker.pybool(),
+        nationality = faker.country(),
+        religion = faker.country(),
         relatives = [],
-        triage = 0
+        triage = faker.pyint(0, 4)
     ))
 
 for i, person in enumerate(people):

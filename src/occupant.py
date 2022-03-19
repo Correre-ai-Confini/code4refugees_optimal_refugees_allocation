@@ -19,5 +19,5 @@ class Occupant:
         else:
             r = [i.name+" "+i.surname for i in self.relative]
         
-            return (self.name+" "+self.surname+", born: "+self.birth+", nationality: "+self.nationality+", religion: "+ self.religion+". \n \
+            return (self.name+" "+self.surname+", born: "+ str(self.birth) +", nationality: "+self.nationality+", religion: "+ self.religion+". \n \
         Relatives:"+ str(r)[1:-2]+"\n Triage code:" +str(self.triage))  
