@@ -10,6 +10,10 @@ class Occupant:
         self.triage = kwargs['triage'] #int: [0,4]
 
     def __str__(self):
+        if self.gender == False:
+            g= "male"
+        else:
+            g = "female"
         if self.relative == None: return (self.name+" "+self.surname+", born: "+self.birth+", nationality: "+self.nationality+", religion: "+ self.religion+". \n \
         Triage code:" +str(self.triage))
         else:
