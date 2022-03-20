@@ -3,10 +3,10 @@ class Tent:
 		self.id = kwargs['id'] #string
 		self.maxSpace = kwargs['maxSpace'] #integer
 		self.occupants = kwargs['occupants'] #array(Occupant)
-		self.distanceFromMed = kwargs['distanceFromMed'] #float [0,1]
+		self.medicalSupport = kwargs['MedicalSupport'] #integer with same scale as occupant.triage.
 		
 	def __str__(self):
-		return ("Tent ID: " + str(self.id) + "\n" + "Tent Max Space: " + str(self.maxSpace) + "\n" + "Tent Occupants: " + str(self.occupants)  + "\n" + "Tent Distance From Medical Center: " + str(self.distanceFromMed))
+		return ("Tent ID: " + str(self.id) + "\n" + "Tent Max Space: " + str(self.maxSpace) + "\n" + "Tent Occupants: " + str(self.occupants)  + "\n" + "Tent Level of Medical Support: " + str(self.medicalSupport))
 
 	def getAvailableSpace(self):
 		return ( self.maxSpace - len(self.occupants) )
@@ -30,6 +30,5 @@ class Tent:
 	def addOccupant(self, individual):
 		self.occupants.append(individual)
 	
-	def removeOccupant(self, individualID):
-		#if individualID in IDs of set of people
-		pass
+	def removeOccupant(self, individual):
+		if individual in self.occupants : self.occupants.remove(individual)
