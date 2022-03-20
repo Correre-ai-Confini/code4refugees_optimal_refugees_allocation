@@ -12,6 +12,21 @@ Optimal_team project:
 
 The goal of the project is to compute an index value that suggest to the camp's management how to distribute the refugees across the tent. <br>
 
+
+## What we have done so far
+The problem of optimal allocation has been formally described. Both entities **Occupant** and **Tent** are treated mathematically with their own variable. An objective function has been built in order to satisfy the needs of all occupants. For illustration purposes, here the proposed optimization problem: 
+
+
+![alt text](doc_files/optimization_formula_2.png?raw=true)
+
+
+## TO DO
+We need to code all the mathematical formalism we built up.
+
+Furthermore we hard need all what may be around this application. Front-end developer, back-end developer and UX designer. 
+
+We just thought about the core of the application :). Any help about that would be really appreciated! And it is for a great cause!!!
+
 ## Application
 The script is composed by two object and an allocation algorithm. The first object is the *Occupant* class, it is characterized by general info (eg name, surname, date of birth), gender, religion, nationality and relatives. The second object is the *Tent* class, characterized by an array of occupant and the distance from the sanitary service tent; some relevant method refer to the computation of descriprive statistic of the occupants.
 
